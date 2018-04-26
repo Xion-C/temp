@@ -1,0 +1,12 @@
+#PBS -N 180425.faca.res
+#PBS -I -l select=1:ncpus=28:mem=100gb:ngpus=1:gpu_model=p100,walltime=10:00:00
+
+module load cuda-toolkit/9.0.176
+module load cuDNN/9.0v7
+module load anaconda3/5.0.1
+
+source activate tf_py27
+
+cd /scratch1/xcheng2/img2img/
+
+python train.py
