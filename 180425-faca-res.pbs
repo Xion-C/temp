@@ -1,4 +1,4 @@
-#PBS -N 180425.faca.res
+#PBS -N 180425-faca-res
 #PBS -I -l select=1:ncpus=28:mem=100gb:ngpus=1:gpu_model=p100,walltime=10:00:00
 
 module load cuda-toolkit/9.0.176
